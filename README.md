@@ -1,0 +1,1 @@
+# VOShop_Diplom
