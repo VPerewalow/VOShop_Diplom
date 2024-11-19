@@ -1,0 +1,33 @@
+:root {  
+  --background-color-light: #eddcce;
+  --text-color-light: #6f5643;
+  --primary-color-light: #73bda8;
+  --secondary-color-light: #cc6b49;
+  --card-background-color-light: #f8f8f8;
+  --cart-background-color-light: #ece6c2;
+  
+  --background-color-dark: #2c2c2c;
+  --text-color-dark: #ffffff;
+  --primary-color-dark: #4b8f77;
+  --secondary-color-dark: #a25336;
+  --card-background-color-dark: #3a3a3a;
+  --cart-background-color-dark: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

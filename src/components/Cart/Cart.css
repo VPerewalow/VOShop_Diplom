@@ -1,0 +1,116 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-light);
+  padding: 15px 30px;
+  border: 1px solid var(--text-color-light);
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+body.dark-mode .cart {
+  background-color: var(--background-color-dark);
+  border: 1px solid var(--text-color-dark);
+}
+
+.cart__product-image {
+  width: 80px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.cart__data {
+  text-align: left;
+}
+
+.cart__data-title {
+  color: #22845f;
+  margin-bottom: 5px;
+}
+
+.cart__data-price {
+  color: var(--text-color-light);
+  font-weight: bold;
+}
+
+body.dark-mode .cart__data-price {
+  color: var(--text-color-dark);
+}
+
+.cart__quantity {
+  background: var(--highlight-color-light);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  border-radius: 3px;
+  color: var(--text-color-light);
+  font-weight: bold;
+  text-align: center;
+}
+
+body.dark-mode .cart__quantity {
+  background: var(--highlight-color-dark);
+  color: var(--text-color-dark);
+}
+
+.cart__button-container {
+  display: flex;
+  align-items: center;
+}
+
+.cart__button {
+  background-color: var(--button-color-light);
+  border: none;
+  color: var(--button-text-color-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  line-height: 25px;
+  box-shadow: rgba(93, 79, 50, 0.25) 0px 4px 12px -2px, rgba(51, 34, 5, 0.3) 0px 3px 7px -3px;
+  margin-left: 15px;
+}
+
+body.dark-mode .cart__button {
+  background-color: var(--button-color-dark);
+  color: var(--button-text-color-dark);
+}
+
+.cart__button img {
+  width: 20px;
+}
+
+@media (max-width: 470px) {
+  .cart {
+    flex-direction: column;
+  }
+
+  .cart__product-image {
+    width: 150px;
+  }
+
+  .cart__data {
+    text-align: center;
+  }
+
+  .cart__data-title {
+    margin: 30px 0 20px;
+  }
+
+  .cart__data-price {
+    margin: 20px 0 30px;
+  }
+
+  .cart__quantity {
+    margin: 0 0 10px;
+  }
+
+  .cart__button-container {
+    margin: 20px 0 20px;
+  }
+}
